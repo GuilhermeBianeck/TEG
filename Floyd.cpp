@@ -8,7 +8,7 @@ struct Graph{
 Graph readGraph();
 void showGraph(Graph* graph);
 void Floyd(Graph* graph);
-int minDistance(Graph* graph, int distancia[], int previous[]);
+
 
 int main(){
     Graph graph = readGraph();
@@ -17,7 +17,7 @@ int main(){
     showGraph(&graph);
     cin >> inicio;
 
-    Floyd(&graph, inicio,  distancia);
+    Floyd(&graph);
 
     cout<<"Distancia até "<<inicio<<":"<<endl;
     for(int i=0; i< graph.vert; i++){
