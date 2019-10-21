@@ -19,10 +19,6 @@ int main(){
 
     Floyd(&graph);
 
-    cout<<"Distancia até "<<inicio<<":"<<endl;
-    for(int i=0; i< graph.vert; i++){
-        cout<<"["<<i<<"] - "<<distancia[i]<<endl;
-    }
 }
 
 void Floyd(Graph* graph){
@@ -48,7 +44,12 @@ void Floyd(Graph* graph){
                 }
             }
         }
-
+        
+    cout<<"Distancia até "<<inicio<<":"<<endl;
+    for(int i=0; i< graph.vert; i++){
+        cout<<"["<<i<<"] - "<<distancia[i]<<endl;
+    }
+}
 
 Graph readGraph(){
     Graph graph;
